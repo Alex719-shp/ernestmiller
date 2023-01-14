@@ -1,0 +1,331 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/photos/wp1843759.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 8%;
+  transition: 0.5s ease-in-out;
+}
+
+.thumnail{
+  width: 100px;
+}
+
+nav .logo img{
+  cursor: pointer;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+nav:hover{
+  padding: 10px 8%;
+  background: #777702;
+}
+
+nav:hover ul li a{
+  color: #fff;
+}
+
+.content{
+  color: #fff;
+  margin-top: 0%;
+  margin-left: 4%;
+}
+
+.content h1{
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.content h1 span{
+  color: #777702;
+}
+
+.content p{
+  max-width: 500px;
+  font-size: 20px;
+  margin: 20px 0;
+  opacity: 0;
+}
+
+.links{
+  margin-top: 30px;
+  opacity: 0;
+}
+
+.links a{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn{
+  border: 2px solid #fff;
+  padding: 10px 35px;
+  margin-right: 15px;
+  border-radius: 30px;
+}
+
+.slide-left{
+  animation: slideleft 1s linear forwards;
+}
+
+@keyframes slideleft{
+  0%{
+      transform: translate(100px);
+      opacity: 0;
+  }
+ 100%{
+      transform: translate(0px);
+      opacity: 1;
+  }
+}
+
+p.slide-left{
+  animation-delay: 1s;
+}
+
+.links.slide-left{
+  animation-delay: 2s;
+}
+
+.biogra{
+  margin-top: 50px;
+  padding: 30px;
+  color: #fff;
+  font-family: serif;
+}
+
+.ern{
+  width: 135px;
+  margin-left: 2%;
+  margin-right: 0.5%;
+  margin-top: 5.5%;
+}
+
+/*PROJECT BOOKS*/
+.titlos{
+  margin-left: 10%;
+  color: aqua;
+}
+
+.book1{
+  width: 135px;
+  margin-left: 0.5%;
+}
+
+.book1des{
+  margin-left: 10%;
+  margin-bottom: 3%;
+  display: flex;
+  width: 30%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+}
+
+.book2des{
+  color: #fff;
+  margin-left: 10%;
+  margin-bottom: 7%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*PHOTOS ernest miller*/
+.image-grid{
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+.grid-image {
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  padding: 5px;
+}
+
+/*LINK PHOTO AND TEXTS*/
+
+a{
+  color: red;
+}
+
+.text_site{
+  margin-top: 0px;
+  padding: 30px;
+  color: #fff;
+  padding-top: 0;
+  padding-right: 5%;
+  padding-left: 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: px;
+}
+
+.titlos_link{
+  margin-left: 2%;
+  color:red;
+  font-family: Roboto,sans-serif;
+}
+
+.image-link{
+  width: 600px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  padding-left: 10px;
+}
+
+/*MANAGMENT loginlogout*/
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  padding-bottom: 60px;
+}
+
+.container .content{
+  text-align: center;
+}
+
+.container .content h3{
+  font-size: 30px;
+  color:#333;
+}
+
+.container .content h3 span{
+  background: crimson;
+  color:#fff;
+  border-radius: 5px;
+  padding:0 15px;
+} */
+
+.container .content h1{
+  font-size: 50px;
+  color:#333;
+}
+
+.container .content h1 span{
+  color:crimson;
+}
+
+.container .content p{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn{
+  display: inline-block;
+  padding:10px 30px;
+  font-size: 20px;
+  background: #333;
+  color:#fff;
+  margin:0 5px;
+  text-transform: capitalize;
+}
+
+.container .content .btn:hover{
+  background: crimson;
+}
+
+.form-container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+  padding-bottom: 60px;
+}
+
+.form-container form{
+  padding:20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  background: #fff;
+  text-align: center;
+  width: 500px;
+}
+
+.form-container form h3{
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color:#333;
+}
+
+.form-container form input,
+.form-container form select{
+  width: 100%;
+  padding:10px 15px;
+  font-size: 17px;
+  margin:8px 0;
+  background: #eee;
+  border-radius: 5px;
+}
+
+.form-container form select option{
+  background: #fff;
+}
+
+.form-container form .form-btn{
+  background: #fbd0d9;
+  color:crimson;
+  text-transform: capitalize;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+  background: crimson;
+  color:#fff;
+}
+
+.form-container form p{
+  margin-top: 10px;
+  font-size: 20px;
+  color:#333;
+}
+
+.form-container form p a{
+  color:crimson;
+}
+
+.form-container form .error-msg{
+  margin:10px 0;
+  display: block;
+  background: crimson;
+  color:#fff;
+  border-radius: 5px;
+  font-size: 20px;
+  padding:10px;
+}
